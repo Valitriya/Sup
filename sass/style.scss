@@ -40,3 +40,26 @@ body{
 }
 
 @import 'general';
+
+.title {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    line-height: 111%;
+}
+.popup-btn{
+    position: absolute;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    & > span{
+        padding-top: 12px;
+        display: block;
+        color: $main-color;
+    }
+}
+img{
+    object-fit: cover;
+}
