@@ -64,6 +64,14 @@
             color: $second-color;
         }
     }
+    &__phone{
+        text-align: center;
+        font-size: 20px;
+        transition: transform 0.8s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
     &__content{
         min-height: calc(100vh - 161px);
         display: flex;
