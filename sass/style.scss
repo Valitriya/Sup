@@ -58,8 +58,22 @@ body{
         padding-top: 12px;
         display: block;
         color: $main-color;
+        transition: color .6s;
+        &:hover{
+            color: $hover-color;
+        }   
+    }
+    &path, circle{
+        transition: all .6s;
+    }
+    &:hover path{
+        fill: $hover-btn-color;
+    }
+    &:hover circle{
+        stroke: $hover-btn-color;
     }
 }
+
 img{
     object-fit: cover;
 }

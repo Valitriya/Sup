@@ -407,7 +407,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, .4);
             display: block;
             width: 100%;
-            padding: 10px 0;
+            padding: 10px 5px;
             margin-bottom: 57px;
             color: $main-color;
             &::placeholder{
@@ -429,11 +429,42 @@
             color: #000;
             font-family: 'Comfortaa', cursive;
             cursor: pointer;
+            transition: background-color 0.6s;
+            &:hover{
+                background-color: $hover-btn-color;
+            }
+        }
+    }
+    &__logo{
+        align-self: flex-start;
+        path{
+            transition: fill 0.6s;
+            &:hover {
+                fill: $hover-color;
+            }
         }
     }
     &__social-title{
         margin-bottom: 28px;
         font-weight: 700;
     }
-   
+   &__gallery{
+    display: flex;
+    gap: 52px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+   }
+   &__menu{
+    &-list{
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+       }
+    &-link{
+        transition: color .6s;
+    &:hover{
+        color: $hover-color;
+    }
+    }
+   }
 }
