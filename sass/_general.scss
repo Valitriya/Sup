@@ -388,3 +388,52 @@
        }
     }
 }
+.footer{
+    padding: 100px 0px 83px;
+    background-color: $second-color;
+    color: #fff;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        margin-bottom: 27px;
+    }
+    &__form{
+        max-width: 500px;
+        &-input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .4);
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 57px;
+            color: $main-color;
+            &::placeholder{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 81%;
+                opacity: 0.2;
+            }
+        }
+        &-btn{
+            background-color: $main-color;
+            padding: 10px 66px;
+            border: none;
+            margin-bottom: 110px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 90%;
+            color: #000;
+            font-family: 'Comfortaa', cursive;
+            cursor: pointer;
+        }
+    }
+    &__social-title{
+        margin-bottom: 28px;
+        font-weight: 700;
+    }
+   
+}
