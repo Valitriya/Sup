@@ -63,7 +63,7 @@ body{
             color: $hover-color;
         }   
     }
-    &path, circle{
+    & path, circle{
         transition: all .6s;
     }
     &:hover path{
@@ -76,4 +76,51 @@ body{
 
 img{
     object-fit: cover;
+}
+
+@media(max-width: 1230px){
+    .header{ 
+        &__decor-text_two{
+            left: 0;
+        }
+    }
+}
+@media(max-width: 720px){
+    .header{
+        &__top{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px 90px;
+        }
+        &__content-box{
+            margin-right: 0;
+        }
+        &__btn{
+            width: 70%;
+        }
+    }
+}
+@media(max-width: 414px){
+    .header{
+        &__decor-text_one{
+         font-size: 60px;
+         right: 34px;
+         bottom: 52px;
+        }
+        &__decor-text_two{
+         font-size: 60px;
+        }
+        &__decor-text_three{
+         display: none;
+        }
+
+     }
+}
+@media(max-width: 375px){
+    .header{
+       &__title{
+        font-size: 55px;
+        line-height: 91%;
+       }
+    }
 }
