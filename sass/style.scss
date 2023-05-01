@@ -80,10 +80,30 @@ img{
 
 @media(max-width: 1230px){
     .header{ 
-        &__decor-text_two{
-            left: 0;
+        &__decor-text{
+            &_two{
+                left: 30px;
+            }
         }
     }
+}
+@media(max-width: 898px){
+    .header{
+        &__decor-text{
+            &_one{
+                font-size: 100px;
+                right: 34px;
+                bottom: 52px;
+               }
+               &_two{
+                font-size: 100px;
+               }
+               &_three{
+                   font-size: 25px;
+                   right: 16px;
+               }
+        }
+     }
 }
 @media(max-width: 720px){
     .header{
@@ -100,20 +120,16 @@ img{
         }
     }
 }
+@media(max-width: 662px){
+    .header{
+        &__decor-text{
+            display: none;
+        }
+     }
+}
 @media(max-width: 414px){
     .header{
-        &__decor-text_one{
-         font-size: 60px;
-         right: 34px;
-         bottom: 52px;
-        }
-        &__decor-text_two{
-         font-size: 60px;
-        }
-        &__decor-text_three{
-         display: none;
-        }
-
+    
      }
 }
 @media(max-width: 375px){
