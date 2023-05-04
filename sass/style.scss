@@ -88,6 +88,26 @@ img{
             }
         }
     }
+    .buy{
+        padding: 0 30px;
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 49px;
+        }
+        &__img{
+            order: -1;
+            width: 100%;
+        }
+        &__content{
+            width: 100%;
+        }
+   
+        &__item{
+            width: 100%;
+            max-width: 600px;
+    }
+}
 }
 @media(max-width: 1000px){
     .info{
@@ -100,6 +120,14 @@ img{
             }
         }
     }
+}
+@media(max-width: 840px){
+    .buy{
+        &__price{
+            bottom: auto;
+           top: -200px; 
+        }
+}
 }
 @media(max-width: 898px){
     .header{
@@ -178,8 +206,11 @@ img{
             }
         }
      }
-}
 
+}
+@media(max-width: 547px){
+
+}
 @media(max-width: 375px){
     .header{
        &__title{
