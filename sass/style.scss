@@ -206,10 +206,22 @@ img{
             }
         }
      }
-
+    .title{
+        font-size: 48px;
+        line-height: 105%;
+        margin-bottom: 30px;
+    }
 }
 @media(max-width: 547px){
-
+    .buy{
+        &__price{
+            background-size: cover;
+            width: 106px;
+            height: 105px;
+            font-size: 21px;
+            top: -169px;
+        }
+    }
 }
 @media(max-width: 375px){
     .header{
@@ -217,5 +229,13 @@ img{
         font-size: 55px;
         line-height: 91%;
        }
+    }
+    .buy{
+        &__price{
+            width: 76px;
+            height: 74px;
+            font-size: 15px;
+            top: -121px;
+        }
     }
 }
