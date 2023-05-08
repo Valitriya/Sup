@@ -117,10 +117,27 @@ img{
             grid-template-columns: 2fr 1fr;
             grid-template-rows: auto auto;
             width: 100%;
+            &__img{
+                width: 100%;
+                align-self: stretch;
+            }
         }
-        &-min__img{
+        &-max{
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto auto auto;
             width: 100%;
-            align-self: stretch;
+            &__img{
+                width: 100%;
+                align-self: stretch;
+            }
+        }
+    }
+    .footer{
+        &__gallery{
+            &-item {
+                width: 100%;
+                align-self: stretch;
+            }
         }
     }
 }
@@ -132,6 +149,17 @@ img{
             justify-content: center;
             &-text{
                 padding-top: 142px;
+            }
+        }
+    }
+    .gallery{
+        &-min{
+            margin-bottom: 100px;
+        }
+        &-max{
+            &__text{
+                font-size: 20px;
+                line-height: 134%;
             }
         }
     }
@@ -150,7 +178,13 @@ img{
     .gallery{
         &-min{
             padding: 29px 31px 40px;
-
+            gap: 15px 20px;
+        }
+        &-max{
+            &__text{
+                font-size: 18px;
+                line-height: 134%;
+            }
         }
     }
 }
@@ -213,6 +247,7 @@ img{
     }
     .gallery{
         &-min{
+            margin-bottom: 50px;
            &::before{
             display: none;
            }
@@ -220,10 +255,24 @@ img{
         &__box{
             gap: 41px;
         }
+        &-max{
+            gap: 15px;
+            &__text{
+                font-size: 15px;
+                line-height: 134%;
+            }
+        }
     }
 }
 @media(max-width: 619px){
-
+    .gallery{
+        &-max{
+            &__text{
+                font-size: 12px;
+                line-height: 134%;
+            }
+        }
+    }
 }
 @media(max-width: 662px){
     .header{
@@ -256,6 +305,35 @@ img{
             height: 105px;
             font-size: 21px;
             top: -169px;
+        }
+    }
+    .gallery{
+        &-min{
+            gap: 10px;
+         
+        }
+        &-max{
+            gap: 10px;
+            &__text{
+                font-size: 10px;
+                line-height: 134%;
+            }
+        }
+    }
+}
+@media(max-width: 440px){
+    .gallery{
+        &__box{
+            gap: 20px;
+        }
+        &-min{
+            margin-bottom: 30px;
+        }
+    }
+    .technology{
+        &__title{
+            font-size: 38px;
+            line-height: 105%;   
         }
     }
 }
