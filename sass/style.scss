@@ -108,6 +108,21 @@ img{
             max-width: 600px;
     }
 }
+    .gallery{
+        &__box{
+            flex-wrap: wrap;
+        }
+        &-min{
+            margin-top: 0;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            width: 100%;
+        }
+        &-min__img{
+            width: 100%;
+            align-self: stretch;
+        }
+    }
 }
 @media(max-width: 1000px){
     .info{
@@ -132,6 +147,12 @@ img{
            background-size: cover;
         }
 }
+    .gallery{
+        &-min{
+            padding: 29px 31px 40px;
+
+        }
+    }
 }
 @media(max-width: 898px){
     .header{
@@ -190,6 +211,16 @@ img{
             margin-top: 285px;
         }
     }
+    .gallery{
+        &-min{
+           &::before{
+            display: none;
+           }
+        }
+        &__box{
+            gap: 41px;
+        }
+    }
 }
 @media(max-width: 619px){
 
@@ -215,6 +246,7 @@ img{
         line-height: 105%;
         margin-bottom: 30px;
     }
+
 }
 @media(max-width: 547px){
     .buy{
